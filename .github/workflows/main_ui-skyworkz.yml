@@ -22,7 +22,7 @@ jobs:
 
     - name: quasar build
       run: |
-        npm install -g --no-optional --production @quasar/cli
+        npm install -g --no-optional --production @quasar/cli @vue/cli
         quasar build
 
     - name: 'Deploy to Azure Web App'
