@@ -1,0 +1,275 @@
+<template>
+  <q-page class="flex flex-center">
+    {{ agenda }}
+  </q-page>
+</template>
+
+<script>
+export default {
+  name: "Stemadvies",
+  data() {
+    return {
+      agenda: {
+        hamerstukken: [
+          {
+            titel:
+              'Intrekken van de deelverordening "Subsidieregeling peuterspeelopvang en VVE, Leiden 2016"',
+            advies: "voor",
+            toelichting: "",
+            behandeld: false
+          },
+          {
+            titel:
+              "Uitvoeringsbesluit geluidvoorzieningen c.a. Willem de Zwijgerbrug",
+            advies: "voor",
+            toelichting: "",
+            behandeld: false
+          },
+          {
+            titel:
+              "Onderzoeksrapport Rekenkamercommissie Leiden – Leiderdorp inzake Leiden Bio Science Park",
+            advies: "voor",
+            toelichting: "",
+            behandeld: false
+          },
+          {
+            titel: "Verordeningen lokale heffingen 2020-2021",
+            advies: "tegen",
+            toelichting: "",
+            behandeld: false
+          },
+          {
+            titel:
+              "Wijziging van de APV gemeente Leiden 2020 i.v.m. opnemen verbod op carbidschieten en doorvoeren zomerwijzigingen model-APV van de VNG",
+            advies: "voor",
+            toelichting: "",
+            behandeld: false
+          },
+          {
+            titel:
+              "Onderzoeksopzet participatie n.a.v. motie ‘participatie onafhankelijk belicht’",
+            advies: "voor",
+            toelichting: "",
+            behandeld: false
+          }
+        ],
+        bespreekstukken: [
+          {
+            titel: "Voortgangsrapportage ambtelijke herhuisvesting",
+            advies: "voor",
+            toelichting: "",
+            amendementen: [],
+            moties: [
+              {
+                titel: "Verbouwen kost (echt) geld",
+                advies: "voor",
+                toelichting: "",
+                partij: "VVD",
+                ingetrokken: false
+              },
+              {
+                titel: "Tonnen besparen op Stadhuisverbouwing raadzaal eerst",
+                advies: "tegen",
+                toelichting: "",
+                partij: "PS",
+                ingetrokken: true
+              }
+            ],
+            behandeld: false
+          },
+          {
+            titel: "Vaststellen Ontwikkelperspectief De Mors",
+            advies: "voor",
+            toelichting: "",
+            amendementen: [
+              {
+                titel: "Groen verbinden aan 2e groene ring",
+                advies: "tegen",
+                toelichting: "",
+                partij: "D66",
+                ingetrokken: false
+              }
+            ],
+            moties: [
+              {
+                titel: "Proactief aan de slag met bereikbaarheid in De Mors",
+                advies: "voor",
+                toelichting: "",
+                partij: "CDA",
+                ingetrokken: false
+              },
+              {
+                titel: "Tijdelijk gebruik Crescendo-terrein",
+                advies: "voor",
+                toelichting: "",
+                partij: "GL",
+                ingetrokken: false
+              }
+            ],
+            behandeld: false
+          },
+          {
+            titel: "Gebiedsvisie Vondelkwartier",
+            advies: "voor",
+            toelichting: "",
+            amendementen: [
+              {
+                titel: "",
+                advies: "tegen",
+                toelichting: "",
+                partij: "PvdD",
+                ingetrokken: false
+              }
+            ],
+            moties: [
+              {
+                titel: "Groenverbinding Vondelkwartier",
+                advies: "voor",
+                toelichting: "",
+                partij: "GL",
+                ingetrokken: false
+              },
+              {
+                titel: "Hoogbouw is geen doel op zich",
+                advies: "tegen",
+                toelichting: "",
+                partij: "PvdA",
+                ingetrokken: false
+              },
+              {
+                titel: "Hoogbouw weg van de bestaande bebouwing",
+                advies: "tegen",
+                toelichting: "",
+                partij: "PS",
+                ingetrokken: false
+              },
+              {
+                titel:
+                  "Aandacht voor starterswoningen in het middeldure koopsegment",
+                advies: "voor",
+                toelichting: "",
+                partij: "CU",
+                ingetrokken: false
+              }
+            ],
+            behandeld: false
+          },
+          {
+            titel: "Beleidsprogramma Fiets 2020-2030",
+            advies: "voor",
+            toelichting: "",
+            amendementen: [
+              {
+                titel: "Fiets op 1 in de Merenwijk",
+                advies: "voor",
+                toelichting: "",
+                partij: "VVD",
+                ingetrokken: false
+              }
+            ],
+            moties: [
+              {
+                titel: "Veilig fietsen op de Morsweg",
+                advies: "tegen",
+                toelichting: "",
+                partij: "GL",
+                ingetrokken: false
+              }
+            ],
+            behandeld: false
+          },
+          {
+            titel:
+              "Verordening tot wijziging van de Subsidieverordening Groene Daken Gemeente Leiden",
+            advies: "voor",
+            toelichting: "",
+            amendementen: [],
+            moties: [
+              {
+                titel: "Kleiner dak hogere subsidie",
+                advies: "voor",
+                toelichting: "",
+                partij: "D66",
+                ingetrokken: false
+              }
+            ],
+            behandeld: false
+          },
+          {
+            titel: "Decemberwijziging 2020",
+            advies: "voor",
+            toelichting: "",
+            moties: [
+              {
+                titel:
+                  "Leiden aan voortouw bij lobby gemeenten over wegvallende rijkscompensatie",
+                advies: "tegen",
+                toelichting: "",
+                partij: "PS",
+                ingetrokken: false
+              }
+            ],
+            behandeld: false
+          },
+          {
+            titel: "Aanvraag gemeentegarantie Boerhaave voor hoogbouw",
+            advies: "voor",
+            toelichting: "",
+            amendementen: [
+              {
+                titel: "Wens partners garantstelling ",
+                advies: "tegen",
+                toelichting: "",
+                partij: "CDA",
+                ingetrokken: false
+              }
+            ],
+            moties: [],
+            behandeld: false
+          },
+          {
+            titel:
+              "Aanpassen Parkeerverordening, Parkeerbelastingverordening en de Nadere voorschriften",
+            advies: "tegen",
+            toelichting: "",
+            amendementen: [
+              {
+                titel: "Geen ideologische parkeertarieven",
+                advies: "voor",
+                toelichting: "",
+                partij: "VVD",
+                ingetrokken: false
+              },
+              {
+                titel: "Geen onredelijke verhoging parkeertarieven",
+                advies: "voor",
+                toelichting: "Voor mits ons amendement sneuvelt",
+                partij: "PS",
+                ingetrokken: false
+              },
+              {
+                titel: "Gefaseerde verhoging parkeertarieven",
+                advies: "voor",
+                toelichting: "Voor mits ons amendement sneuvelt",
+                partij: "PS",
+                ingetrokken: false
+              }
+            ],
+            moties: [],
+            behandeld: false
+          },
+          {
+            titel:
+              "Motie VOD - Zonder medefinanciering geen internationale basisschool",
+            advies: "voor",
+            toelichting: "",
+            amendementen: [],
+            moties: [],
+            behandeld: false
+          }
+        ]
+      }
+    };
+  }
+};
+</script>
