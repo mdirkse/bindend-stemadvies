@@ -20,10 +20,9 @@ jobs:
       with:
         node-version: '14.x'
 
-    - name: npm install, build, and test
+    - name: quasar build
       run: |
-        npm install quasar-cli
-        npm install
+        npm install -g --no-optional --production @quasar/cli
         quasar build
 
     - name: 'Deploy to Azure Web App'
