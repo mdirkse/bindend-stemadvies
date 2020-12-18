@@ -22,9 +22,9 @@ jobs:
 
     - name: npm install, build, and test
       run: |
+        npm install quasar-cli
         npm install
-        npm run build --if-present
-        npm run test --if-present
+        quasar build
 
     - name: 'Deploy to Azure Web App'
       uses: azure/webapps-deploy@v2
@@ -32,4 +32,4 @@ jobs:
         app-name: 'ui-skyworkz'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_263fc37fed364ff58b362d5b5c1f8bf3 }}
-        package: .
+        package: dist/spa
